@@ -1,6 +1,6 @@
 :root {
   --primary: #624CAB;
-  --secondary: #477377;
+  --secondary: #1e6e94;
   --light: #F2E8F3;
 }
 
@@ -124,4 +124,9 @@ height: 100%;
 
 .container .footer .row .col i {
     margin: 0 12px;
+}
+
+.container .footer .row .col #saveBtn {
+    background-color: var(--secondary);
+    border-radius: 12px;
 }
