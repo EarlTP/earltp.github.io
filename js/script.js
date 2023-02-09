@@ -1,10 +1,10 @@
 jQuery(document).ready(() => {
-//const sakura = new Sakura('body');
+    const sakura = new Sakura('body');
 
     const config = {
-    name: "Ciao",
-    startDate: "2023-02-11",
-        icsFile:"/data/Luca&Karen.ics",
+        name: "Luca & Karen",
+        startDate: "2023-03-11",
+        icsFile:"https://earltp.github.io/lk-wedding/data/Luca&Karen.ics",
         options: ['Apple','Google','iCal'],
     };
   jQuery('#saveBtn').click((event) => {
