@@ -112,6 +112,10 @@ body {
     align-items: center;
 }
 
+.container .footer .row .col {
+    font-size: 1.8rem;
+}
+
 .container .footer .row .col i {
     margin: 0 12px;
 }
