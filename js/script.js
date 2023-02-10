@@ -1,5 +1,8 @@
 jQuery(document).ready(() => {
-    let language = "it-IT";
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let language = urlParams.get('language') || "it-IT";
+    
     const navigatorLanguage = navigator.language || navigator.userLanguage;
     if (navigatorLanguage.indexOf("es") > -1) {
        language = "es-ES";
