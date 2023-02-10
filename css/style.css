@@ -70,6 +70,7 @@ body {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     margin: 0 12px;
+    cursor: pointer;
 }
 
 .flag-container .flag.italy {
@@ -156,6 +157,11 @@ body>section {
 
 .container .footer .row .col i {
     margin: 0 12px;
+}
+
+.container .footer .row .col a {
+    color: inherit;
+    cursor: pointer;
 }
 
 .container .footer .row .col #saveBtn {
