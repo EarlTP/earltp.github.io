@@ -1,7 +1,7 @@
 jQuery(document).ready(() => {
     let language = "it-IT";
     const navigatorLanguage = navigator.language || navigator.userLanguage;
-    if (navigatorLanguage.indexOf("es")) {
+    if (navigatorLanguage.indexOf("es") > -1) {
        language = "es-ES";
     }
 
@@ -21,7 +21,7 @@ jQuery(document).ready(() => {
         const flag = event.currentTarget;
         language = flag.dataset.language;
         
-        if(['it-IT', 'es-ES'].indexOf(language)) {
+        if(['it-IT', 'es-ES'].indexOf(language) > -1) {
             translator.translatePageTo(language);
         }
     });
