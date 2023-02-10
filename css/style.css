@@ -159,7 +159,7 @@ body>section {
     margin: 0 12px;
 }
 
-.container .footer .row .col a {
+.container .footer .row .col a.map-link {
     color: inherit;
     cursor: pointer;
 }
