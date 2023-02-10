@@ -59,7 +59,7 @@ jQuery(document).ready(() => {
         window.atcb_action(eventConfig, event.currentTarget)
     });
     
-    jQuery('.map-link'.click((event) => {
+    jQuery('.map-link').click((event) => {
         const link = event.currentTarget;
         let address = encodeURIComponent(link.dataset.address);
         if ((navigator.platform.indexOf('iPhone') != -1) || (navigator.platform.indexOf('iPad') != -1) || (navigator.platform.indexOf('iPod') != -1)){/* if we're on iOS, open in Apple Maps */
