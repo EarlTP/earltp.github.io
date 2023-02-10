@@ -1,5 +1,9 @@
 jQuery(document).ready(() => {
-    const language = navigator.language || navigator.userLanguage;
+    let language = "it-IT";
+    const navigatorLanguage = navigator.language || navigator.userLanguage;
+    if (navigatorLanguage.indexOf("es")) {
+       language = "es-ES";
+    }
 
     const itTranslation = {
         "title": "Matrimonio Luca & Karen | 11 marzo 2023",
@@ -12,6 +16,15 @@ jQuery(document).ready(() => {
 
     const translator = new Translator();
     translator.add('it-IT', itTranslation).add('es-ES', esTranslation).translatePageTo(language);
+    
+    jQuery(".flag").click((event) => {
+        const flag = event.currentTarget;
+        language = flag.dataset.language;
+        
+        if(['it-IT', 'es-ES'].indexOf(language)) {
+            translator.translatePageTo(language);
+        }
+    });
 
     const sakura = new Sakura('body', {
         colors: [{
