@@ -1,6 +1,5 @@
 jQuery(document).ready(() => {
     const language = navigator.language || navigator.userLanguage;
-   alert(language);
 
     const itTranslation = {
         "title": "Matrimonio Luca & Karen | 11 marzo 2023",

@@ -58,6 +58,34 @@ body {
     transform: rotate(180deg);
 }
 
+.flag-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flag-container .flag {
+    position: relative;
+    width: 1.5rem;
+    height: 1rem;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin: 0 12px;
+}
+
+.flag-container .flag.italy {
+    background: linear-gradient( to right, #009343 33%, #fff 33%, #fff 66%, #cf2734 0);
+}
+
+.flag-container .flag.mexico {
+    background: linear-gradient( to right, #006845 33%, #fff 33%, #fff 66%, #cf0922 0);
+    display: grid;
+    place-items: center;
+}
+
+.flag-container .flag.mexico img {
+    height: calc(1.5rem * 8 / 30)
+}
+
 @media print,
 screen and (min-width: 40em) {
     .container .content h1 {
