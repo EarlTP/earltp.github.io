@@ -52,7 +52,10 @@ jQuery(document).ready(() => {
         name: "Luca & Karen",
         startDate: "2023-03-11",
         icsFile: "https://earltp.github.io/lk-wedding/data/Luca&Karen.ics",
-        options: ['Apple', 'Google']
+        options: ['Apple', 'Google', 'iCal'],
+        hideIconButton: true,
+        hideBackground: true,
+        listStyle:"overlay"
     };
 
     jQuery('#saveBtn').click((event) => {

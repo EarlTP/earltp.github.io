@@ -162,6 +162,8 @@ body>section {
 .container .footer .row .col a.map-link {
     color: inherit;
     cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 .container .footer .row .col #saveBtn {
