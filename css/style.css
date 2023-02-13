@@ -141,7 +141,7 @@ body>section {
     font-style: normal;
     margin: 0;
     padding: 0;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     color: var(--secondary);
 }
 
@@ -156,14 +156,15 @@ body>section {
 }
 
 .container .footer .row .col i {
-    margin: 0 12px;
+    margin: 0 9px;
 }
 
 .container .footer .row .col a.map-link {
+    display: flex;
+    align-items: center;
     color: inherit;
     cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: 6px;
+    border-bottom: 2px solid var(--secondary);
 }
 
 .container .footer .row .col #saveBtn {
