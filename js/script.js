@@ -14,7 +14,7 @@ jQuery(document).ready(() => {
     };
     const esTranslation = {
         "title": "Boda Luca & Karen | 11 marzo 2023",
-        "msg1": "Tenemos el placer de invitarles a<br>ser testigos de nuestra union"
+        "msg1": "Anhelamos contar con su presencia<br>para celebrar nuestra hermosa union"
     };
 
     const translator = new Translator();
